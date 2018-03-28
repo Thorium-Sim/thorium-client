@@ -1,0 +1,31 @@
+{
+  "name": "thorium-client",
+  "version": "1.0.0",
+  "description": "A client application for Thorium",
+  "main": "src/index.js",
+  "scripts": {
+    "dist":
+      "build --tasks win-x86,win-x64,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
+    "start": "run --x86 --mirror https://dl.nwjs.io/ ."
+  },
+  "author": "Alex Anderson",
+  "license": "ISC",
+  "chromium-args": "--mixed-context --enable-logging=stderr",
+  "window": {
+    "resizable": false,
+    "kiosk": true,
+    "fullscreen": true,
+    "frame": false,
+    "toolbar": false
+  },
+  "dependencies": {
+    "beepbeep": "^1.2.1",
+    "bonjour": "^3.5.0",
+    "power-off": "^1.1.2",
+    "robotjs": "^0.5.1",
+    "sleep-mode": "^1.1.0"
+  },
+  "devDependencies": {
+    "nwjs-builder-phoenix": "^1.14.6"
+  }
+}

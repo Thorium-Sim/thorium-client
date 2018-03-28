@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Thorium</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <img src="logo.png" class="logo" draggable="false" />
+  <h1>Thorium</h1>
+  <div id="ready" class="hidden">
+    <p>New version available. Click here to update.</p>
+    <button style="margin: 0 auto;" onclick="window.thorium.runUpdate()">Update</button>
+  </div>
+  <div id="loading">
+
+    <img src="loading.svg" class="loading" />
+    <p>Searching for Thorium Server...</p>
+  </div>
+  <div id="servers" class="hidden">
+    <h4>Select a server:</h4>
+    <div id="serverList">
+
+    </div>
+  </div>
+  <p>
+    <em>
+      <strong>⌘ + D</strong>
+    </em>
+    to enter server address
+  </p>
+  <script src="index.js"></script>
+</body>
+
+</html>
